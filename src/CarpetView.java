@@ -21,7 +21,7 @@ public class CarpetView {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter num pls: ");
+        System.out.print("Enter num pls (less than 9): ");
         pow = Math.pow(3,sc.nextInt());
         System.out.println(pow);
         new JFXPanel();
@@ -33,7 +33,6 @@ public class CarpetView {
         stage.setTitle("Sierpinski");
         stage.setWidth(800);
         stage.setHeight(800);
-        stage.setResizable(false);
         stage.show();
 
         Group group = new Group();
